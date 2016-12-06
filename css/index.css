@@ -333,7 +333,11 @@ html, body {
     .list #luntan .luntanlist {
       width: 100%;
       padding-top: 0.1rem;
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      padding-bottom: 0.1rem;
+      border-radius: 0.2rem; }
+      .list #luntan .luntanlist .item:nth-last-child(1) {
+        border: none; }
       .list #luntan .luntanlist .item {
         width: 95%;
         height: 1.3rem;
@@ -448,11 +452,52 @@ html, body {
         cursor: pointer; }
     .list #xiaoxi .xiaoxilist {
       width: 100%;
-      height: 20rem;
       padding-top: 0.1rem;
-      background-image: url("../img/xiaoxi/xiaoxi.png");
-      background-size: contain;
-      background-repeat: no-repeat; }
+      padding-bottom: 0.1rem;
+      background-color: #ffffff;
+      border-radius: 0.2rem; }
+      .list #xiaoxi .xiaoxilist .item:nth-last-child(1) {
+        border: none; }
+      .list #xiaoxi .xiaoxilist .item {
+        width: 95%;
+        height: 1.3rem;
+        margin: 0 auto;
+        border-bottom: 0.01rem solid #bcbcbc; }
+        .list #xiaoxi .xiaoxilist .item .img {
+          width: 0.9rem;
+          height: 0.9rem;
+          margin: 0.2rem;
+          float: left;
+          margin-left: 0;
+          background-size: cover;
+          background-repeat: no-repeat; }
+        .list #xiaoxi .xiaoxilist .item .huati {
+          height: 100%;
+          float: left; }
+          .list #xiaoxi .xiaoxilist .item .huati h3 {
+            font-size: 0.3rem;
+            color: #000000;
+            margin-top: 0.3rem; }
+          .list #xiaoxi .xiaoxilist .item .huati h5 {
+            font-size: 0.18rem;
+            color: #8d8d8d;
+            margin-top: 0.1rem; }
+        .list #xiaoxi .xiaoxilist .item .time {
+          font-size: 0.2rem;
+          color: #8d8d8d;
+          line-height: 0.6rem;
+          float: right;
+          margin: 0.3rem; }
+      .list #xiaoxi .xiaoxilist .item:nth-child(1) .img {
+        background-image: url("../img/xiaoxi/1.png"); }
+      .list #xiaoxi .xiaoxilist .item:nth-child(2) .img {
+        background-image: url("../img/xiaoxi/2.png"); }
+      .list #xiaoxi .xiaoxilist .item:nth-child(3) .img {
+        background-image: url("../img/xiaoxi/3.png"); }
+      .list #xiaoxi .xiaoxilist .item:nth-child(4) .img {
+        background-image: url("../img/xiaoxi/4.png"); }
+      .list #xiaoxi .xiaoxilist .item:nth-child(5) .img {
+        background-image: url("../img/xiaoxi/5.png"); }
   .list #wode {
     width: 100%;
     height: 100%;
