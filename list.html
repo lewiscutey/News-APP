@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="screen-orientation" content="portrait">
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -15,22 +18,85 @@
 </head>
 <body>
     <div class="list">
-        <h2>新闻列表</h2>
-        <div class="input">
-            <div class="search">
-                <div class="magnifier"></div>
-                <input type="text" placeholder="请输入您想搜索的新闻列表名称，如：旅游" required autofocus>
+        <!--首页-->
+        <div id="index" class="menu">
+            <h2>新闻列表</h2>
+            <div class="input">
+                <div class="search">
+                    <div class="magnifier"></div>
+                    <input type="text" placeholder="请输入您想搜索的新闻列表名称，如：旅游" required autofocus>
+                </div>
+                <div class="cancel"></div>
             </div>
-            <div class="cancel"></div>
+            <div class="new">
+                <div class="news1"><a href="news.html"></a></div>
+                <div class="news2"><a href="news.html"></a></div>
+                <div class="news3"><a href="news.html"></a></div>
+                <div class="news4"><a href="news.html"></a></div>
+                <div class="news5"><a href="news.html"></a></div>
+                <div class="news6"><a href="news.html"></a></div>
+                <div class="news7"><a href="news.html"></a></div>
+                <div class="news8"><a href="news.html"></a></div>
+                <div class="news9"><a href="news.html"></a></div>
+                <div class="news10"><a href="news.html"></a></div>
+            </div>
         </div>
-        <div class="new">
-            <div class="news1"><a href="news.html"></a></div>
-            <div class="news2"><a href="news.html"></a></div>
-            <div class="news3"><a href="news.html"></a></div>
-            <div class="news4"><a href="news.html"></a></div>
-            <div class="news5"><a href="news.html"></a></div>
-            <div class="news6"><a href="news.html"></a></div>
+
+        <!--论坛页-->
+        <div id="luntan" class="menu">
+            <h2>奇闻论坛</h2>
+            <div class="input">
+                <div class="search">
+                    <div class="magnifier"></div>
+                    <input type="text" placeholder="请输入您想搜索的新闻，如：赵本山" required autofocus>
+                </div>
+                <div class="cancel"></div>
+            </div>
+            <div class="luntanlist">
+
+            </div>
         </div>
+
+        <!--消息页-->
+        <div id="xiaoxi" class="menu">
+            <h2>我的消息</h2>
+            <div class="input">
+                <div class="search">
+                    <div class="magnifier"></div>
+                    <input type="text" placeholder="请输入您想搜索的回复，如：我的回复" required autofocus>
+                </div>
+                <div class="cancel"></div>
+            </div>
+            <div class="xiaoxilist">
+
+            </div>
+        </div>
+
+        <!--我的页-->
+        <div id="wode" class="menu">
+
+        </div>
+
+        <!--菜单栏-->
+        <div id="nav">
+            <div class="item xinwen active">
+                <i class="iconfont icon-xinwen"></i>
+                <span>新闻</span>
+            </div>
+            <div class="item luntan">
+                <i class="iconfont icon-bbs"></i>
+                <span>论坛</span>
+            </div>
+            <div class="item xiaoxi">
+                <i class="iconfont icon-tubiao15"></i>
+                <span>消息</span>
+            </div>
+            <div class="item wode">
+                <i class="iconfont icon-wode"></i>
+                <span>我的</span>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

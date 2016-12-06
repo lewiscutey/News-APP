@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box;
-  font-family: Helvetica; }
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
@@ -12,9 +11,49 @@ a {
 img {
   border: none; }
 
+a, button {
+  -webkit-tap-highlight-color: transparent; }
+
+button {
+  -webkit-appearance: none; }
+
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: Helvetica; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot?t=1480950484019");
+  /* IE9*/
+  src: url("../font/iconfont.eot?t=1480950484019#iefix") format("embedded-opentype"), url("../font/iconfont.woff?t=1480950484019") format("woff"), url("../font/iconfont.ttf?t=1480950484019") format("truetype"), url("../font/iconfont.svg?t=1480950484019#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-share6:before {
+  content: "\e602"; }
+
+.icon-shoucang:before {
+  content: "\e611"; }
+
+.icon-xinwen:before {
+  content: "\e62c"; }
+
+.icon-wode:before {
+  content: "\e618"; }
+
+.icon-tubiao15:before {
+  content: "\e64f"; }
+
+.icon-bbs:before {
+  content: "\e600"; }
 
 .swiper-container {
   width: 100%;
@@ -116,7 +155,7 @@ html, body {
   .login .input {
     width: 4.6rem;
     height: 2.2rem;
-    margin: 5.6rem auto 0; }
+    margin: 5.3rem auto 0; }
     .login .input input {
       font-size: 0.4rem;
       color: #ffffff;
@@ -139,89 +178,252 @@ html, body {
   height: 100%;
   position: absolute;
   background-color: #efefef; }
-  .list h2 {
+  .list #index {
     width: 100%;
-    height: 1rem;
-    background-color: #fafafa;
-    border-bottom: 0.01rem solid #dcdcde;
-    color: #000000;
-    text-align: center;
-    font-size: 0.5rem;
-    line-height: 1rem; }
-  .list .input {
-    width: 100%;
-    height: 1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .list .input .search {
-      width: 6.3rem;
-      height: 0.75rem;
-      background-color: #ffffff;
-      border-radius: 0.1rem;
+    display: block; }
+    .list #index h2 {
+      width: 100%;
+      height: 1rem;
+      background-color: #fafafa;
+      border-bottom: 0.01rem solid #dcdcde;
+      color: #000000;
+      text-align: center;
+      font-size: 0.5rem;
+      line-height: 1rem; }
+    .list #index .input {
+      width: 100%;
+      height: 1rem;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-around;
       align-items: center; }
-      .list .input .search .magnifier {
+      .list #index .input .search {
+        width: 6.3rem;
+        height: 0.75rem;
+        background-color: #ffffff;
+        border-radius: 0.1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .list #index .input .search .magnifier {
+          width: 0.4rem;
+          height: 0.4rem;
+          margin-left: 0.1rem;
+          background-image: url("../img/list/magnifier.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          cursor: pointer; }
+        .list #index .input .search input {
+          width: 92%;
+          font-size: 0.3rem;
+          line-height: 0.75rem;
+          border: none;
+          outline: none;
+          background-color: transparent; }
+      .list #index .input .cancel {
         width: 0.4rem;
         height: 0.4rem;
-        margin-left: 0.1rem;
-        background-image: url("../img/list/magnifier.png");
+        background-image: url("../img/list/cancel.png");
         background-size: cover;
         background-repeat: no-repeat;
         cursor: pointer; }
-      .list .input .search input {
-        width: 92%;
-        font-size: 0.3rem;
-        line-height: 0.75rem;
-        border: none;
-        outline: none;
-        background-color: transparent; }
-    .list .input .cancel {
-      width: 0.4rem;
-      height: 0.4rem;
-      background-image: url("../img/list/cancel.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      cursor: pointer; }
-  .list .new {
+    .list #index .new {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-content: center; }
+      .list #index .new div {
+        width: 3.66rem;
+        height: 3.66rem;
+        margin-bottom: 0.15rem; }
+        .list #index .new div a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+      .list #index .new .news1 {
+        background-image: url("../img/list/1.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news2 {
+        background-image: url("../img/list/2.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news3 {
+        background-image: url("../img/list/3.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news4 {
+        background-image: url("../img/list/4.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news5 {
+        background-image: url("../img/list/5.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news6 {
+        background-image: url("../img/list/6.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news7 {
+        background-image: url("../img/list/7.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news8 {
+        background-image: url("../img/list/8.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news9 {
+        background-image: url("../img/list/9.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .list #index .new .news10 {
+        background-image: url("../img/list/10.png");
+        background-size: cover;
+        background-repeat: no-repeat; }
+  .list #luntan {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center; }
-    .list .new div {
-      width: 3.66rem;
-      height: 3.66rem;
-      margin-bottom: 0.15rem; }
-      .list .new div a {
-        display: block;
-        width: 100%;
-        height: 100%; }
-    .list .new .news1 {
-      background-image: url("../img/list/1.png");
-      background-size: cover;
+    display: none; }
+    .list #luntan h2 {
+      width: 100%;
+      height: 1rem;
+      background-color: #fafafa;
+      border-bottom: 0.01rem solid #dcdcde;
+      color: #000000;
+      text-align: center;
+      font-size: 0.5rem;
+      line-height: 1rem; }
+    .list #luntan .input {
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .list #luntan .input .search {
+        width: 6.3rem;
+        height: 0.75rem;
+        background-color: #ffffff;
+        border-radius: 0.1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .list #luntan .input .search .magnifier {
+          width: 0.4rem;
+          height: 0.4rem;
+          margin-left: 0.1rem;
+          background-image: url("../img/list/magnifier.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          cursor: pointer; }
+        .list #luntan .input .search input {
+          width: 92%;
+          font-size: 0.3rem;
+          line-height: 0.75rem;
+          border: none;
+          outline: none;
+          background-color: transparent; }
+      .list #luntan .input .cancel {
+        width: 0.4rem;
+        height: 0.4rem;
+        background-image: url("../img/list/cancel.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer; }
+    .list #luntan .luntanlist {
+      width: 100%;
+      height: 20rem;
+      padding-top: 0.1rem;
+      background-image: url("../img/luntan/luntan.png");
+      background-size: contain;
       background-repeat: no-repeat; }
-    .list .new .news2 {
-      background-image: url("../img/list/2.png");
-      background-size: cover;
+  .list #xiaoxi {
+    width: 100%;
+    display: none; }
+    .list #xiaoxi h2 {
+      width: 100%;
+      height: 1rem;
+      background-color: #fafafa;
+      border-bottom: 0.01rem solid #dcdcde;
+      color: #000000;
+      text-align: center;
+      font-size: 0.5rem;
+      line-height: 1rem; }
+    .list #xiaoxi .input {
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .list #xiaoxi .input .search {
+        width: 6.3rem;
+        height: 0.75rem;
+        background-color: #ffffff;
+        border-radius: 0.1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .list #xiaoxi .input .search .magnifier {
+          width: 0.4rem;
+          height: 0.4rem;
+          margin-left: 0.1rem;
+          background-image: url("../img/list/magnifier.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          cursor: pointer; }
+        .list #xiaoxi .input .search input {
+          width: 92%;
+          font-size: 0.3rem;
+          line-height: 0.75rem;
+          border: none;
+          outline: none;
+          background-color: transparent; }
+      .list #xiaoxi .input .cancel {
+        width: 0.4rem;
+        height: 0.4rem;
+        background-image: url("../img/list/cancel.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer; }
+    .list #xiaoxi .xiaoxilist {
+      width: 100%;
+      height: 20rem;
+      padding-top: 0.1rem;
+      background-image: url("../img/xiaoxi/xiaoxi.png");
+      background-size: contain;
       background-repeat: no-repeat; }
-    .list .new .news3 {
-      background-image: url("../img/list/3.png");
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .list .new .news4 {
-      background-image: url("../img/list/4.png");
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .list .new .news5 {
-      background-image: url("../img/list/5.png");
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .list .new .news6 {
-      background-image: url("../img/list/6.png");
-      background-size: cover;
-      background-repeat: no-repeat; }
+  .list #wode {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-image: url("../img/wode/wode.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+#nav {
+  width: 100%;
+  height: 1.4rem;
+  padding: 0.2rem;
+  border-top: 0.01rem solid #8f8e8e;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100; }
+  #nav .item {
+    width: 1rem;
+    height: 1rem;
+    color: #8f8e8e;
+    text-align: center; }
+    #nav .item i {
+      display: block;
+      line-height: 0.5rem;
+      font-size: 0.5rem; }
+    #nav .item span {
+      line-height: 0.5rem;
+      font-size: 0.3rem;
+      display: block; }
+  #nav .item.active {
+    color: #4096fb; }
 
 .news {
   width: 100%;
@@ -325,16 +527,17 @@ html, body {
           background-position: center;
           background-repeat: no-repeat; }
     .news .newslist .newsItem:nth-child(1) .img {
-      background-image: url("../img/news/news1.png"); }
+      background-image: url("../img/news/news1.jpg"); }
     .news .newslist .newsItem:nth-child(2) .img {
-      background-image: url("../img/news/news2.png"); }
+      background-image: url("../img/news/news2.jpg"); }
     .news .newslist .newsItem:nth-child(3) .img {
-      background-image: url("../img/news/news3.png"); }
+      background-image: url("../img/news/news3.jpg"); }
     .news .newslist .newsItem:nth-child(4) .img {
       background-image: url("../img/news/news4.jpg"); }
 
 .content {
   width: 100%;
+  height: 100%;
   position: absolute; }
   .content .title {
     width: 100%;
@@ -369,6 +572,20 @@ html, body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
+    .content .title .share {
+      width: 5.39rem;
+      height: 7.27rem;
+      background-image: url("../img/contents/share.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: none; }
   .content .img {
     width: 100%;
     height: 3.5rem;
@@ -394,3 +611,27 @@ html, body {
     .content .word p {
       text-indent: 2em;
       margin-bottom: 0.2rem; }
+      .content .word p img {
+        display: block;
+        width: 100%;
+        margin: 0 auto; }
+  .content .pinglun {
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+    color: rgba(31, 99, 119, 0.51);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.6rem; }
+    .content .pinglun input {
+      width: 4rem;
+      font-size: 0.3rem;
+      line-height: 0.6rem;
+      border: 0.01rem solid #0D8BBD;
+      border-radius: 0.4rem;
+      outline: none;
+      background-color: transparent;
+      padding-left: 0.2rem; }
