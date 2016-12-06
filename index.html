@@ -13,7 +13,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/swiper.jquery.js"></script>
     <script src="js/swiper.animate1.0.2.min.js"></script>
-    <script src="js/index.js"></script>
     <title>News-APP</title>
 </head>
 <body>
@@ -58,4 +57,34 @@
     <div class="swiper-pagination"></div>
 </div>
 </body>
+<script>
+    function resise(designSize,type) {
+        var type= type || "x";
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        if(type == "x"){
+            var scale = width/designSize*100+"px";
+        }else if(type == "y"){
+            var scale = height/designSize*100+"px";
+        }
+        document.getElementsByTagName("html")[0].style.fontSize = scale;
+    }
+    resise(1334,"y");
+
+    //swiper插件启用
+    var mySwiper = new Swiper ('.swiper-container', {
+        // 如果需要分页器
+        // pagination: '.swiper-pagination',
+
+        //添加动画
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+
+    });
+</script>
 </html>
