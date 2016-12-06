@@ -180,7 +180,8 @@ html, body {
   background-color: #efefef; }
   .list #index {
     width: 100%;
-    display: block; }
+    display: block;
+    padding-bottom: 1.4rem; }
     .list #index h2 {
       width: 100%;
       height: 1rem;
@@ -282,7 +283,8 @@ html, body {
         background-repeat: no-repeat; }
   .list #luntan {
     width: 100%;
-    display: none; }
+    display: none;
+    padding-bottom: 1.4rem; }
     .list #luntan h2 {
       width: 100%;
       height: 1rem;
@@ -330,14 +332,75 @@ html, body {
         cursor: pointer; }
     .list #luntan .luntanlist {
       width: 100%;
-      height: 20rem;
       padding-top: 0.1rem;
-      background-image: url("../img/luntan/luntan.png");
-      background-size: contain;
-      background-repeat: no-repeat; }
+      background-color: #ffffff; }
+      .list #luntan .luntanlist .item {
+        width: 95%;
+        height: 1.3rem;
+        margin: 0 auto;
+        border-bottom: 0.01rem solid #bcbcbc; }
+        .list #luntan .luntanlist .item .img {
+          width: 0.9rem;
+          height: 0.9rem;
+          margin: 0.2rem;
+          float: left;
+          margin-left: 0;
+          background-size: cover;
+          background-repeat: no-repeat; }
+        .list #luntan .luntanlist .item .huati {
+          height: 100%;
+          float: left; }
+          .list #luntan .luntanlist .item .huati h3 {
+            font-size: 0.3rem;
+            color: #000000;
+            margin-top: 0.3rem; }
+          .list #luntan .luntanlist .item .huati h5 {
+            font-size: 0.18rem;
+            color: #8d8d8d;
+            margin-top: 0.1rem; }
+        .list #luntan .luntanlist .item .guanzhu {
+          width: 0.6rem;
+          height: 0.6rem;
+          float: right;
+          margin: 0.35rem;
+          background-size: cover;
+          background-repeat: no-repeat; }
+      .list #luntan .luntanlist .item:nth-child(1) .img {
+        background-image: url("../img/luntan/1.png"); }
+      .list #luntan .luntanlist .item:nth-child(1) .guanzhu {
+        background-image: url("../img/luntan/people.png"); }
+      .list #luntan .luntanlist .item:nth-child(2) .img {
+        background-image: url("../img/luntan/2.png"); }
+      .list #luntan .luntanlist .item:nth-child(2) .guanzhu {
+        background-image: url("../img/luntan/guanzhu.png"); }
+      .list #luntan .luntanlist .item:nth-child(3) .img {
+        background-image: url("../img/luntan/3.png"); }
+      .list #luntan .luntanlist .item:nth-child(3) .guanzhu {
+        background-image: url("../img/luntan/guanzhu.png"); }
+      .list #luntan .luntanlist .item:nth-child(4) .img {
+        background-image: url("../img/luntan/4.png"); }
+      .list #luntan .luntanlist .item:nth-child(4) .guanzhu {
+        background-image: url("../img/luntan/guanzhu.png"); }
+      .list #luntan .luntanlist .item:nth-child(5) .img {
+        background-image: url("../img/luntan/5.png"); }
+      .list #luntan .luntanlist .item:nth-child(5) .guanzhu {
+        background-image: url("../img/luntan/jia.png"); }
+      .list #luntan .luntanlist .item:nth-child(6) .img {
+        background-image: url("../img/luntan/6.png"); }
+      .list #luntan .luntanlist .item:nth-child(6) .guanzhu {
+        background-image: url("../img/luntan/jia.png"); }
+      .list #luntan .luntanlist .item:nth-child(7) .img {
+        background-image: url("../img/luntan/7.png"); }
+      .list #luntan .luntanlist .item:nth-child(7) .guanzhu {
+        background-image: url("../img/luntan/jia.png"); }
+      .list #luntan .luntanlist .item:nth-child(8) .img {
+        background-image: url("../img/luntan/8.png"); }
+      .list #luntan .luntanlist .item:nth-child(8) .guanzhu {
+        background-image: url("../img/luntan/jia.png"); }
   .list #xiaoxi {
     width: 100%;
-    display: none; }
+    display: none;
+    padding-bottom: 1.4rem; }
     .list #xiaoxi h2 {
       width: 100%;
       height: 1rem;
