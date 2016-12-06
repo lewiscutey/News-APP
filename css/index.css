@@ -503,8 +503,10 @@ html, body {
     height: 100%;
     display: none;
     background-image: url("../img/wode/wode.png");
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 1.4rem;
+    box-sizing: content-box; }
 
 #nav {
   width: 100%;
