@@ -75,4 +75,10 @@ $(function () {
        $(this).css("color","red");
     });
 
+//新闻页面菜单按钮
+    $(".news .title .nav").hover(function () {
+        $(".news .title .nav-menu").stop().slideToggle();
+    });
+
+
 });
