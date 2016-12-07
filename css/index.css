@@ -574,7 +574,7 @@ html, body {
           font-size: 0.4rem;
           line-height: 1rem;
           padding-left: 0.3rem;
-          color: #000000;
+          color: rgba(56, 56, 56, 0.75);
           float: left; }
         .list #wode .optionlist .item .more {
           width: 0.3rem;
