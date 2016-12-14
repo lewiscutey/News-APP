@@ -14,6 +14,7 @@
     <script src="js/swiper.jquery.js"></script>
     <script src="js/swiper.animate1.0.2.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/iscroll.js"></script>
     <title>News-APP</title>
 </head>
 <body>
@@ -24,46 +25,63 @@
             <div class="nav"></div>
             <div class="nav-menu"></div>
         </div>
-        <div class="newslist">
-            <div class="newsItem">
-                <a href="content.html"></a>
-                <div class="img">
-                    <div class="focus">纪念万里同志</div>
-                </div>
-                <div class="title">
-                    <h3>中共中央举行纪念万里同志诞辰100周年座谈会</h3>
-                    <div class="more"></div>
-                </div>
-            </div>
-            <div class="newsItem">
-                <a href="content.html"></a>
-                <div class="img">
-                    <div class="focus">你的名字</div>
-                </div>
-                <div class="title">
-                    <h3>问：你的名字？答：新海诚！</h3>
-                    <div class="more"></div>
-                </div>
-            </div>
-            <div class="newsItem">
-                <a href="content.html"></a>
-                <div class="img">
-                    <div class="focus">苹果频繁爆炸</div>
-                </div>
-                <div class="title">
-                    <h3>苹果频繁爆炸不召回，恐重蹈三星Note 7覆辙</h3>
-                    <div class="more"></div>
-                </div>
-            </div>
-            <div class="newsItem">
-                <a href="content.html"></a>
-                <div class="img">
-                    <div class="focus">MacBook Pro</div>
-                </div>
-                <div class="title">
-                    <h3>部分MacBook Pro用户反应电池仅能续航3到6个小时</h3>
-                    <div class="more"></div>
-                </div>
+
+        <div class="newslist" id="wrapper">
+            <div id="scroller">
+
+                <!--<div id="pullDown">-->
+                    <!--<span class="pullDownIcon"></span>-->
+                    <!--<span class="pullDownLabel">下拉刷新...</span>-->
+                <!--</div>-->
+
+                <ul id="thelist">
+                    <li class="newsItem">
+                        <a href="content.html"></a>
+                        <div class="img">
+                            <div class="focus">纪念万里同志</div>
+                        </div>
+                        <div class="title">
+                            <h3>中共中央举行纪念万里同志诞辰100周年座谈会</h3>
+                            <div class="more"></div>
+                        </div>
+                    </li>
+                    <li class="newsItem">
+                        <a href="content.html"></a>
+                        <div class="img">
+                            <div class="focus">你的名字</div>
+                        </div>
+                        <div class="title">
+                            <h3>问：你的名字？答：新海诚！</h3>
+                            <div class="more"></div>
+                        </div>
+                    </li>
+                    <li class="newsItem">
+                        <a href="content.html"></a>
+                        <div class="img">
+                            <div class="focus">苹果频繁爆炸</div>
+                        </div>
+                        <div class="title">
+                            <h3>苹果频繁爆炸不召回，恐重蹈三星Note 7覆辙</h3>
+                            <div class="more"></div>
+                        </div>
+                    </li>
+                    <li class="newsItem">
+                        <a href="content.html"></a>
+                        <div class="img">
+                            <div class="focus">MacBook Pro</div>
+                        </div>
+                        <div class="title">
+                            <h3>部分MacBook Pro用户反应电池仅能续航3到6个小时</h3>
+                            <div class="more"></div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!--<div id="pullUp">-->
+                    <!--<span class="pullUpIcon"></span>-->
+                    <!--<span class="pullUpLabel">上拉加载...</span>-->
+                <!--</div>-->
+
             </div>
         </div>
     </div>
